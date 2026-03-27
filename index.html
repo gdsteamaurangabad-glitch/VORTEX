@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VORTEX | Beast Edition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+    <header id="main-header">
+        <nav class="navbar">
+            <div class="logo">VORTEX<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fa-solid fa-moon" id="theme-toggle"></i>
+                <div class="cart-icon" id="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content reveal">
+            <h1>The Future of <span>Premium</span></h1>
+            <p>Beast-mode performance meets luxury aesthetics. Exclusive drops daily.</p>
+            <a href="#products" class="btn primary">Explore Drop</a>
+        </div>
+        <div class="hero-image reveal">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800" alt="Vortex Watch">
+        </div>
+    </section>
+
+    <section class="products section" id="products">
+        <div class="section-header reveal">
+            <h2>The <span>Main Vault</span></h2>
+        </div>
+        <div class="product-grid" id="product-list"></div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="section-header reveal">
+            <h2>Contact <span>Us</span></h2>
+            <p>Reach out to the Elite Support Team.</p>
+        </div>
+        <div class="contact-container reveal">
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" rows="5"></textarea>
+                <button type="submit" class="btn primary">Send Intel</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content section">
+            <div class="logo">VORTEX<span>.</span></div>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p>&copy; 2026 VORTEX Shop. Beast Mode Activated.</p>
+        </div>
+    </footer>
+
+    <div class="sidebar" id="cart-sidebar">
+        <div class="sidebar-header">
+            <h3>Shopping Vault</h3>
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        <div id="cart-items"></div>
+        <div class="sidebar-footer">
+            <div class="total-row"><span>Total:</span><span id="cart-total-val">$0.00</span></div>
+            <button class="btn primary full-width">Secure Checkout</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
